@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  height: 8em;
+}
+
+.imgContainer {
+  display: flex;
+  width: 25vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.registerLogin {
+  width: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbarText {
+  font-family: "Playfair Display SC";
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #d4af37;
+  letter-spacing: 0.5em;
+}
+
+.navbarText:hover {
+  color: #b22222;
+  text-shadow: 2px 2px 5px black;
+}

@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-image: url(../../assets/SeasoningJuicySteak.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
