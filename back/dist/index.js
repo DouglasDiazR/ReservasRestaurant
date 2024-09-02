@@ -1,54 +1,17 @@
 "use strict";
-const calculaArea = (lado1, lado2) => lado1 * lado2;
-console.log(calculaArea(5, 6));
-const presentarUsuario = (name, lastName, age) => {
-    if (age !== undefined) {
-        console.log(`Hola soy ${name} y tengo ${age} años de edad.`);
-    }
-    else if (lastName !== undefined) {
-        console.log(`Hola soy ${name} ${lastName}`);
-    }
-    else
-        console.log(`Hola soy ${name}`);
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-presentarUsuario("Homero");
-presentarUsuario("Marge", "Bubbie");
-presentarUsuario("Lisa", "Simpson", 8);
-const persona = {
-    nombre: "Marge",
-    edad: 35,
-};
-console.log(persona);
-const empleado = {
-    nombre: "Homero",
-    edad: 37,
-    puesto: "Jefe de Seguridad",
-    empleadoDelMes: true,
-};
-console.log(empleado);
-const celularCODIGO = {
-    nombre: "Smartphone",
-    precio: 500,
-    marca: "Samsung",
-    modelo: "Galaxy S20",
-};
-const remeraCODIGO = {
-    nombre: "Camiseta",
-    precio: 20,
-    talla: "M",
-    color: "Azul",
-};
-console.log(celularCODIGO);
-console.log(remeraCODIGO);
-const tarea = {
-    titulo: "TypeScript II",
-    descripcion: "Configuración y práctica",
-    completada: false,
-};
-const tareaParaEntregar = {
-    titulo: "Proyecto Integrador M3",
-    completada: false,
-    fechaLimite: "2024-03-14",
-};
-console.log(tarea);
-console.log(tareaParaEntregar);
+Object.defineProperty(exports, "__esModule", { value: true });
+const server_1 = __importDefault(require("./server"));
+const envs_1 = require("./config/envs");
+require("reflect-metadata");
+const data_source_1 = require("./config/data-source");
+data_source_1.AppDataSource.initialize()
+    .then(() => {
+    console.log(`Database connected on port ${envs_1.DB_PORT}`);
+    server_1.default.listen(envs_1.PORT, () => {
+        console.log(`Server listening on PORT ${envs_1.PORT}`);
+    });
+})
+    .catch((error) => console.log(error));
