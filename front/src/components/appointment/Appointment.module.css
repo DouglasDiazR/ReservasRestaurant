@@ -1,0 +1,25 @@
+.container {
+  background-color: azure;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.container h2 {
+  text-align: center;
+  background-color: beige;
+  width: 20%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.active {
+  color: green;
+}
+
+.cancelled {
+  color: red;
+}
