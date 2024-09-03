@@ -1,8 +1,10 @@
 .container {
+  background-color: #b22222;
   display: flex;
+  position: absolute;
   justify-content: space-between;
   width: 80vw;
-  height: 8em;
+  height: 8rem;
 }
 
 .imgContainer {
@@ -28,10 +30,10 @@
 
 .navbarText {
   font-family: "Playfair Display SC";
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #d4af37;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.5rem;
 }
 
 .navbarText:hover {

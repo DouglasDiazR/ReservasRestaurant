@@ -1,5 +1,6 @@
 import Appoinment from "../../components/appointment/Appoinment";
 import { useState, useEffect } from "react";
+import styles from "./Appointments.module.css";
 import axios from "axios";
 const Appointments = () => {
   const [appoinments, setAppoinments] = useState([]);
@@ -11,7 +12,7 @@ const Appointments = () => {
       .then((data) => setAppoinments(data));
   }, []);
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Mis Turnos</h1>
       <div>
         {appoinments.map((appoinment) => {
@@ -21,7 +22,7 @@ const Appointments = () => {
               time={appoinment.time}
               date={appoinment.date}
               status={appoinment.status}
-              descripcion={appoinment.descripcion}
+              description={appoinment.description}
             />
           );
         })}
