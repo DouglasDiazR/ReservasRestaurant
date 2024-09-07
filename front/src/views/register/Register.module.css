@@ -1,0 +1,48 @@
+.container {
+  background-color: aliceblue;
+  width: 25%;
+  padding: 2.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  margin-top: 5rem;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container div {
+  margin-bottom: 1rem;
+}
+
+.container input {
+  margin-left: 0.5rem;
+  width: 15rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.container p {
+  color: red;
+  font-size: small;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+}
+
+.buttons button {
+  height: 2.5rem;
+  width: 25%;
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
