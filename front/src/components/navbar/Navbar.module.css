@@ -34,6 +34,7 @@
   font-weight: bold;
   color: #d4af37;
   letter-spacing: 0.5rem;
+  text-decoration: none;
 }
 
 .navbarText:hover {
